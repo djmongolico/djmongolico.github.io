@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?1xrm7u');
+  src:  url('fonts/icomoon.eot?1xrm7u#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1xrm7u') format('truetype'),
+    url('fonts/icomoon.woff?1xrm7u') format('woff'),
+    url('fonts/icomoon.svg?1xrm7u#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+.ico{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+    font-size: 80px;
+}
+.icon-facebook{
+    background: #2E406E;
+    font-size: 30px;
+}
+.icon-facebook:hover{
+    font-size: 50px;
+}
+.icon-twitter{
+    background: skyblue;
+    
+}
+.icon-youtube{
+    background: red;
+    
+}
+.icon-instagram{
+    background: palevioletred;
+    
+}
+.icon-whatsapp{
+    background: green;
+}
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+}
+.icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.45);
+    font-size: 50px;
+    
+}
